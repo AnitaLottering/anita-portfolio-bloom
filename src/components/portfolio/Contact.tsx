@@ -45,7 +45,7 @@ export const Contact = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
-              <a href="/Anita-Lottering-CV.pdf" target="_blank" rel="noreferrer">View CV</a>
+              <a href="/Anita-Lottering-CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
             </Button>
           </div>
         </div>
