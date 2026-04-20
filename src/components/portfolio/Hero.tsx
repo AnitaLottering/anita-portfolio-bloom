@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Github, Linkedin, Sparkles } from "lucide-react";
+import { Download, Github, Linkedin, Sparkles, Mail } from "lucide-react";
 import profileImg from "@/assets/anita-profile.jpg";
 
 export const Hero = () => {
@@ -17,28 +17,40 @@ export const Hero = () => {
         <div className="space-y-6 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-sm text-muted-foreground">
             <Sparkles className="w-4 h-4 text-primary" />
-            Welcome to my little corner
+            Software Developer · Cape Town 🌸
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Hi, I'm <span className="text-gradient">Anita</span>
-            <br />
-            <span className="text-3xl md:text-4xl font-medium text-muted-foreground">
-              a creative developer ✨
-            </span>
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            Hi, I'm <span className="text-gradient">Sibahle Josline Anita Lottering</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-            I craft soft, thoughtful digital experiences — blending code,
-            design, and a love for everything beautifully made.
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
+            A dedicated fourth-year ICT student at Cape Peninsula University of Technology,
+            passionate about building clean, thoughtful web & mobile experiences with
+            React, Angular, and React Native.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <Button size="lg" className="rounded-full bg-gradient-primary hover:shadow-hover transition-smooth border-0 text-primary-foreground">
-              <Download className="w-4 h-4 mr-2" /> Download CV
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-gradient-primary hover:shadow-hover transition-smooth border-0 text-primary-foreground"
+            >
+              <a href="/Anita-Lottering-CV.pdf" download>
+                <Download className="w-4 h-4 mr-2" /> Download CV
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
-              <Linkedin className="w-4 h-4 mr-2" /> LinkedIn
+            <Button asChild size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
+              <a href="https://www.linkedin.com/in/anita-lottering-95989a347/" target="_blank" rel="noreferrer">
+                <Linkedin className="w-4 h-4 mr-2" /> LinkedIn
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
-              <Github className="w-4 h-4 mr-2" /> GitHub
+            <Button asChild size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
+              <a href="https://github.com/AnitaLottering" target="_blank" rel="noreferrer">
+                <Github className="w-4 h-4 mr-2" /> GitHub
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="rounded-full bg-white/60 backdrop-blur-md border-white/60 hover:bg-white/80 transition-smooth">
+              <a href="mailto:anitalottering16@gmail.com">
+                <Mail className="w-4 h-4 mr-2" /> Email
+              </a>
             </Button>
           </div>
         </div>
@@ -48,7 +60,7 @@ export const Hero = () => {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white/70 shadow-glow animate-float">
             <img
               src={profileImg}
-              alt="Anita portrait"
+              alt="Sibahle Josline Anita Lottering portrait"
               className="w-full h-full object-cover"
               width={768}
               height={768}

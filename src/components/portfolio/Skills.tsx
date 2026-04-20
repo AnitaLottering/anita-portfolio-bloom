@@ -5,8 +5,12 @@ const skillGroups = [
     skills: [
       { name: "HTML & CSS", level: 90 },
       { name: "JavaScript", level: 80 },
-      { name: "React", level: 75 },
-      { name: "C# / .NET", level: 70 },
+      { name: "React", level: 80 },
+      { name: "React Native", level: 72 },
+      { name: "Angular", level: 70 },
+      { name: "Java", level: 75 },
+      { name: "Python", level: 70 },
+      { name: "SQL", level: 75 },
     ],
   },
   {
@@ -21,7 +25,7 @@ const skillGroups = [
   {
     title: "Tools",
     color: "bg-pastel-blue",
-    badges: ["Git", "VS Code", "Photoshop", "Illustrator", "Premiere Pro", "Notion", "Tailwind"],
+    badges: ["Git", "GitHub", "GitLab", "VS Code", "IntelliJ IDEA", "Firebase", "Redux", "Node.js", "Tailwind"],
   },
 ];
 
