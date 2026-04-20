@@ -56,14 +56,14 @@ export const Hero = () => {
         </div>
 
         <div className="relative flex justify-center animate-scale-in">
-          <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-50 animate-pulse-soft" />
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white/70 shadow-glow animate-float">
+          <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-3xl opacity-50 animate-pulse-soft" />
+          <div className="relative w-72 h-80 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden border-8 border-white/70 shadow-glow animate-float">
             <img
               src={profileImg}
               alt="Sibahle Josline Anita Lottering portrait"
               className="w-full h-full object-cover"
               width={768}
-              height={768}
+              height={896}
             />
           </div>
         </div>
