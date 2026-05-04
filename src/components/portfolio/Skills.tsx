@@ -34,8 +34,8 @@ export const Skills = () => {
     <section id="skills" className="section-padding relative">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14 animate-fade-in">
-          <p className="text-sm uppercase tracking-widest text-primary mb-3">Toolbox</p>
-          <h2 className="text-4xl md:text-5xl">Skills & <span className="text-gradient">Expertise</span></h2>
+          <p className="section-eyebrow">Toolbox</p>
+          <h2 className="section-heading">Skills &amp; <span className="text-gradient">Expertise</span></h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">

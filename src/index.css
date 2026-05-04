@@ -109,11 +109,19 @@
   }
 
   .blob {
-    @apply absolute rounded-full blur-3xl opacity-60 pointer-events-none;
+    @apply absolute rounded-full blur-3xl opacity-30 pointer-events-none;
   }
 
   .section-padding {
-    @apply py-24 px-6 md:px-12;
+    @apply py-20 md:py-28 px-6 md:px-12;
+  }
+
+  .section-eyebrow {
+    @apply text-xs uppercase tracking-[0.2em] text-primary/80 mb-3 font-medium;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-semibold tracking-tight;
   }
 }
 

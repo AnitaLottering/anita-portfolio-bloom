@@ -12,8 +12,8 @@ export const Education = () => {
     <section id="education" className="section-padding relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14 animate-fade-in">
-          <p className="text-sm uppercase tracking-widest text-primary mb-3">Journey</p>
-          <h2 className="text-4xl md:text-5xl">My <span className="text-gradient">Education</span></h2>
+          <p className="section-eyebrow">Journey</p>
+          <h2 className="section-heading">My <span className="text-gradient">Education</span></h2>
         </div>
 
         <div className="relative">

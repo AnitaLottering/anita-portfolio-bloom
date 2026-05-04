@@ -9,7 +9,7 @@ const contactItems = [
   { icon: Phone, label: "Phone", value: "+27 78 630 0493", href: "tel:+27786300493", color: "bg-pastel-peach" },
   { icon: Github, label: "GitHub", value: "AnitaLottering", href: "https://github.com/AnitaLottering", color: "bg-pastel-lavender" },
   { icon: Linkedin, label: "LinkedIn", value: "anita-lottering", href: "https://www.linkedin.com/in/anita-lottering-95989a347/", color: "bg-pastel-blue" },
-  { icon: MapPin, label: "Location", value: "Cape Town, South Africa 🌸", href: null, color: "bg-pastel-mint" },
+  { icon: MapPin, label: "Location", value: "Cape Town, South Africa", href: null, color: "bg-pastel-mint" },
 ];
 
 export const Contact = () => {
@@ -25,8 +25,8 @@ export const Contact = () => {
     <section id="contact" className="section-padding relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14 animate-fade-in">
-          <p className="text-sm uppercase tracking-widest text-primary mb-3">Say hi</p>
-          <h2 className="text-4xl md:text-5xl mb-4">Let's <span className="text-gradient">connect</span></h2>
+          <p className="section-eyebrow">Say hi</p>
+          <h2 className="section-heading mb-4">Let's <span className="text-gradient">connect</span></h2>
           <p className="text-muted-foreground max-w-md mx-auto">
             Have a project in mind or just want to chat? My inbox is always open.
           </p>
