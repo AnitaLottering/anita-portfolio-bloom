@@ -19,17 +19,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 5%;
 
-    /* Bold pink primary */
-    --primary: 335 85% 55%;
+    /* Black primary */
+    --primary: 0 0% 5%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 335 90% 65%;
+    --primary-glow: 0 0% 20%;
 
     /* Black secondary */
     --secondary: 0 0% 5%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Pink accent */
-    --accent: 335 85% 55%;
+    /* Black accent */
+    --accent: 0 0% 5%;
     --accent-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
@@ -40,7 +40,7 @@
 
     --border: 0 0% 90%;
     --input: 0 0% 94%;
-    --ring: 335 85% 55%;
+    --ring: 0 0% 5%;
 
     --radius: 0rem;
 
@@ -55,14 +55,14 @@
     /* Gradients */
     --gradient-soft: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
     --gradient-hero: linear-gradient(120deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(335 85% 55%), hsl(335 90% 65%));
-    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.7));
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 20%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
 
     /* Shadows */
     --shadow-soft: 0 8px 32px -8px hsl(0 0% 0% / 0.08);
-    --shadow-glow: 0 0 60px hsl(335 85% 55% / 0.25);
+    --shadow-glow: 0 0 60px hsl(0 0% 0% / 0.15);
     --shadow-card: 0 10px 40px -12px hsl(0 0% 0% / 0.12);
-    --shadow-hover: 0 20px 50px -12px hsl(335 85% 55% / 0.35);
+    --shadow-hover: 0 20px 50px -12px hsl(0 0% 0% / 0.25);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,7 +116,7 @@
   }
 
   .section-eyebrow {
-    @apply text-xs uppercase tracking-[0.25em] text-primary mb-3 font-bold;
+    @apply text-xs uppercase tracking-[0.25em] text-foreground mb-3 font-bold;
   }
 
   .section-heading {
