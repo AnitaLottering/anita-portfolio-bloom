@@ -11,39 +11,38 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240 15% 25%;
+    --foreground: 0 0% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 15% 25%;
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 15% 25%;
+    --popover-foreground: 0 0% 5%;
 
-    /* Soft pink primary */
-    --primary: 340 70% 75%;
-    --primary-foreground: 340 30% 20%;
-    --primary-glow: 340 90% 88%;
+    /* Bold pink primary */
+    --primary: 335 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 335 90% 65%;
 
-    /* Lavender secondary */
-    --secondary: 270 60% 88%;
-    --secondary-foreground: 270 30% 25%;
+    /* Black secondary */
+    --secondary: 0 0% 5%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Baby blue accent */
-    --accent: 200 80% 88%;
-    --accent-foreground: 200 40% 25%;
+    /* Pink accent */
+    --accent: 335 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Soft beige muted */
-    --muted: 35 40% 95%;
-    --muted-foreground: 240 10% 50%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --destructive: 0 70% 75%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 320 30% 92%;
-    --input: 320 30% 94%;
-    --ring: 340 70% 75%;
+    --border: 0 0% 90%;
+    --input: 0 0% 94%;
+    --ring: 335 85% 55%;
 
-    --radius: 1.25rem;
+    --radius: 0rem;
 
     /* Pastel palette */
     --pastel-pink: 340 90% 92%;
@@ -54,16 +53,16 @@
     --pastel-peach: 20 90% 92%;
 
     /* Gradients */
-    --gradient-soft: linear-gradient(135deg, hsl(340 90% 96%), hsl(270 80% 96%), hsl(200 85% 96%));
-    --gradient-hero: linear-gradient(120deg, hsl(340 90% 95%) 0%, hsl(270 80% 95%) 50%, hsl(200 85% 95%) 100%);
-    --gradient-primary: linear-gradient(135deg, hsl(340 80% 85%), hsl(270 70% 85%));
-    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.7), hsl(0 0% 100% / 0.4));
+    --gradient-soft: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    --gradient-hero: linear-gradient(120deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(335 85% 55%), hsl(335 90% 65%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(0 0% 100% / 0.7));
 
     /* Shadows */
-    --shadow-soft: 0 8px 32px -8px hsl(340 50% 70% / 0.15);
-    --shadow-glow: 0 0 60px hsl(340 80% 85% / 0.4);
-    --shadow-card: 0 10px 40px -12px hsl(270 40% 60% / 0.12);
-    --shadow-hover: 0 20px 50px -12px hsl(340 50% 70% / 0.25);
+    --shadow-soft: 0 8px 32px -8px hsl(0 0% 0% / 0.08);
+    --shadow-glow: 0 0 60px hsl(335 85% 55% / 0.25);
+    --shadow-card: 0 10px 40px -12px hsl(0 0% 0% / 0.12);
+    --shadow-hover: 0 20px 50px -12px hsl(335 85% 55% / 0.35);
 
     /* Transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,16 +99,16 @@
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-xl bg-white/60 border border-white/50 rounded-3xl;
+    @apply bg-white border border-border;
     box-shadow: var(--shadow-card);
   }
 
   .glass-nav {
-    @apply backdrop-blur-2xl bg-white/70 border border-white/40;
+    @apply backdrop-blur-2xl bg-white/90 border-b border-border;
   }
 
   .blob {
-    @apply absolute rounded-full blur-3xl opacity-30 pointer-events-none;
+    @apply absolute rounded-full blur-3xl opacity-20 pointer-events-none;
   }
 
   .section-padding {
@@ -117,11 +116,11 @@
   }
 
   .section-eyebrow {
-    @apply text-xs uppercase tracking-[0.2em] text-primary/80 mb-3 font-medium;
+    @apply text-xs uppercase tracking-[0.25em] text-primary mb-3 font-bold;
   }
 
   .section-heading {
-    @apply text-3xl md:text-4xl font-semibold tracking-tight;
+    @apply text-3xl md:text-5xl font-bold tracking-tight;
   }
 }
 
