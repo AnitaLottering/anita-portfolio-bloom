@@ -11,10 +11,10 @@ export const About = () => {
     <section id="about" className="section-padding relative">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14 animate-fade-in">
-          <p className="text-sm uppercase tracking-widest text-primary mb-3">About me</p>
-          <h2 className="text-4xl md:text-5xl mb-4">A little about <span className="text-gradient">who I am</span></h2>
+          <p className="section-eyebrow">About me</p>
+          <h2 className="section-heading mb-4">A little about <span className="text-gradient">who I am</span></h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            I'm a multimedia & ICT student with a love for soft design and clean code.
+            I'm a multimedia &amp; ICT student with a love for soft design and clean code.
             I believe technology should feel calm, kind, and beautifully made.
           </p>
         </div>

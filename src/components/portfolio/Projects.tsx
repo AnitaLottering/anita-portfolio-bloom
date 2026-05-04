@@ -26,8 +26,8 @@ export const Projects = () => {
     <section id="projects" className="section-padding relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14 animate-fade-in">
-          <p className="text-sm uppercase tracking-widest text-primary mb-3">Work</p>
-          <h2 className="text-4xl md:text-5xl">Featured <span className="text-gradient">Projects</span></h2>
+          <p className="section-eyebrow">Work</p>
+          <h2 className="section-heading">Featured <span className="text-gradient">Projects</span></h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
