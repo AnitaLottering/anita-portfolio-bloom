@@ -61,7 +61,7 @@ export const Hero = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/anita-lottering-95989a347/"
+              href="https://linkedin.com/in/sibahle-josline-anita-lottering-048627234"
               target="_blank"
               rel="noreferrer"
               className="text-foreground hover:opacity-60 transition-smooth"
