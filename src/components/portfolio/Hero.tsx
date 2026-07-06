@@ -52,7 +52,7 @@ export const Hero = () => {
 
           <div className="flex items-center gap-5 pt-4">
             <a
-              href="https://linkedin.com/in/sibahle-josline-anita-lottering-048627234"
+              href="https://github.com/AnitaLottering"
               target="_blank"
               rel="noreferrer"
               className="text-foreground hover:opacity-60 transition-smooth"
